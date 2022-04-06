@@ -5,21 +5,20 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <div className="search-input">
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert(`${search}`);
+      <h2>Find the elucidation of:</h2>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          alert(`${search}`);
+        }}
+      >
+        <input
+          type="search"
+          onChange={(e) => {
+            setSearch(e.target.value);
           }}
-        >
-          <input
-            type="search"
-            onChange={(e) => {
-              setSearch(e.target.value);
-            }}
-          />
-        </form>
-      </div>
+        />
+      </form>
     </div>
   );
 }
