@@ -1,5 +1,5 @@
 :root {
-  --title: #a0937d;
+  --title: #df7861;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 
 .content {
-  background: #e3cdc1;
+  background: #ecdfc8;
   max-width: 164mm;
   min-height: 196mm;
   margin: 25px auto;
@@ -19,6 +19,11 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+h1,
+h2 {
+  font-family: "BIZ UDPMincho", serif;
 }
 
 h1 {
@@ -33,7 +38,7 @@ h2 {
 
 hr {
   border-style: solid;
-  color: #d68a10;
+  color: #ecb390;
   margin: 15px 0 90px;
   width: -webkit-fill-available;
 }

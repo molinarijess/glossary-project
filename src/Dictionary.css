@@ -1,0 +1,25 @@
+.input-box {
+  background: #ecdfc8;
+  background-blend-mode: soft-light;
+  background-image: url(img/search.ico);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 55px;
+  border-radius: 12px 10px;
+  border: solid 2px #ecb390;
+  color: #df7861;
+  padding: 10px 5px;
+  font-size: 14px;
+  font-family: "BIZ UDPGothic", sans-serif;
+}
+
+.input-box::placeholder {
+  color: #ecb390;
+  font-family: "BIZ UDPGothic", sans-serif;
+  margin-right: 5px;
+}
+
+.input-box:focus {
+  outline: none;
+  box-shadow: none;
+}

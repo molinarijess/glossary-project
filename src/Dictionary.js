@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Dictionary.css";
 
 export default function Dictionary() {
   let [search, setSearch] = useState("");
@@ -14,6 +15,8 @@ export default function Dictionary() {
       >
         <input
           type="search"
+          className="input-box"
+          placeholder="Search..."
           onChange={(e) => {
             setSearch(e.target.value);
           }}
