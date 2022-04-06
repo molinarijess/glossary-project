@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./Dictionary.css";
 
 export default function Dictionary() {
@@ -11,6 +12,10 @@ export default function Dictionary() {
         onSubmit={(e) => {
           e.preventDefault();
           alert(`${search}`);
+          let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${search}`;
+          axios.get(apiUrl).then((response) => {
+            console.log(response.data[0]);
+          });
         }}
       >
         <input
