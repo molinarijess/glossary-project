@@ -4,6 +4,7 @@
 
 body {
   background: var(--title);
+  font-family: "BIZ UDPGothic", sans-serif;
 }
 
 .App {
@@ -22,7 +23,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "BIZ UDPMincho", serif;
 }
 

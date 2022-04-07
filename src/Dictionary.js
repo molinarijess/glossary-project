@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Definitions from "./Definitions";
 import "./Dictionary.css";
 
 export default function Dictionary() {
   let [search, setSearch] = useState("");
+  let [result, setResult] = useState(null);
 
   return (
     <div className="Dictionary">
@@ -11,10 +13,9 @@ export default function Dictionary() {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          alert(`${search}`);
           let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${search}`;
           axios.get(apiUrl).then((response) => {
-            console.log(response.data[0]);
+            setResult(response.data[0]);
           });
         }}
       >
@@ -27,6 +28,7 @@ export default function Dictionary() {
           }}
         />
       </form>
+      <Definitions result={result} />
     </div>
   );
 }
