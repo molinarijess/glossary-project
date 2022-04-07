@@ -10,6 +10,7 @@ section h3 {
 }
 
 p {
+  text-transform: lowercase;
   font-size: 12px;
 }
 
