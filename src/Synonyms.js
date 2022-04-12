@@ -1,0 +1,20 @@
+import React from "react";
+import "./Synonyms.css";
+
+export default function Synonyms({ synonyms }) {
+  if (synonyms) {
+    return (
+      <ul className="Synonyms">
+        {synonyms.map((synonym, index) => {
+          return (
+            <li className="synonym" key={index}>
+              {synonym}
+            </li>
+          );
+        })}
+      </ul>
+    );
+  } else {
+    return null;
+  }
+}
