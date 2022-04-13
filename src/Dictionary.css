@@ -1,20 +1,24 @@
+h2 {
+  margin: 0 0 10px;
+}
+
 .input-box {
-  background: #ecdfc8;
+  background: #cc9544;
   background-blend-mode: soft-light;
   background-image: url(img/search.ico);
   background-position: right;
   background-repeat: no-repeat;
   background-size: 55px;
   border-radius: 12px 10px;
-  border: solid 2px #ecb390;
-  color: #df7861;
+  border: solid 2px #361500;
+  color: #603601;
   padding: 10px 5px;
   font-size: 14px;
   font-family: "BIZ UDPGothic", sans-serif;
 }
 
 .input-box::placeholder {
-  color: #ecb390;
+  color: #361500;
   font-family: "BIZ UDPGothic", sans-serif;
   margin-right: 5px;
 }

@@ -1,5 +1,11 @@
-ul.Synonyms {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.Synonyms {
+  text-align: center;
+}
+
+span.synonym {
+  color: #603601;
+  font-size: 12px;
+  margin: 5px;
+  font-style: italic;
+  opacity: 0.8;
 }

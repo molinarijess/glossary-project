@@ -1,5 +1,5 @@
 :root {
-  --title: #df7861;
+  --title: #603601;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 .content {
-  background: #ecdfc8;
+  background: #cc9544;
   max-width: 164mm;
   min-height: 196mm;
   margin: 25px auto;
@@ -40,7 +40,7 @@ h2 {
 
 hr {
   border-style: solid;
-  color: #ecb390;
-  margin: 15px 0 90px;
+  color: #361500;
+  margin: 35px 0 35px;
   width: -webkit-fill-available;
 }
