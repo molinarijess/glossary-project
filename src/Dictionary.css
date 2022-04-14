@@ -2,6 +2,12 @@ h2 {
   margin: 0 0 10px;
 }
 
+@media (max-width: 500px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+
 .input-box {
   background: #cc9544;
   background-blend-mode: soft-light;
@@ -9,12 +15,19 @@ h2 {
   background-position: right;
   background-repeat: no-repeat;
   background-size: 55px;
-  border-radius: 12px 10px;
   border: solid 2px #361500;
+  border-radius: 12px 10px;
   color: #603601;
-  padding: 10px 5px;
-  font-size: 14px;
   font-family: "BIZ UDPGothic", sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+}
+
+@media (max-width: 500px) {
+  .input-box {
+    margin: 5px;
+    padding: 5px 2.5px;
+  }
 }
 
 .input-box::placeholder {

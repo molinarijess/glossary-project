@@ -13,9 +13,11 @@ export default function Definitions({ result }) {
         {result.meanings.map((meaning, index) => {
           return (
             <div className="meanings" key={index}>
-              <span className="explanation-word">{meaning.partOfSpeech}</span>{" "}
-              {meaning.definitions[0].definition}
               <Synonyms synonyms={meaning.synonyms} />
+              <span className="explanation-word">
+                {meaning.partOfSpeech}
+              </span>{" "}
+              {meaning.definitions[0].definition}
             </div>
           );
         })}

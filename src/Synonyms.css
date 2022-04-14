@@ -5,7 +5,17 @@
 span.synonym {
   color: #603601;
   font-size: 12px;
-  margin: 5px;
+  margin: 10px;
   font-style: italic;
   opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  .Synonyms {
+    text-align: left;
+  }
+
+  span.synonym {
+    margin: 2.5px;
+  }
 }
