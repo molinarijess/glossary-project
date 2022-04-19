@@ -1,5 +1,6 @@
 import React from "react";
 import Synonyms from "./Synonyms";
+import Photos from "./Photos";
 import "./Definitions.css";
 
 export default function Definitions({ result }) {
@@ -21,6 +22,7 @@ export default function Definitions({ result }) {
             </div>
           );
         })}
+        <Photos photo={result.word} />
       </div>
     );
   } else {
