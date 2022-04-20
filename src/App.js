@@ -11,6 +11,22 @@ export default function App() {
         <Dictionary />
         <hr />
       </section>
+      <footer className="footer">
+        Coded by{" "}
+        <a
+          href="https://molinarijess.netlify.app/"
+          className="professional-link"
+        >
+          Jessica Molinari
+        </a>{" "}
+        and is{" "}
+        <a
+          href="https://github.com/molinarijess/glossary-project"
+          className="professional-link"
+        >
+          open-sourced
+        </a>
+      </footer>
     </div>
   );
 }

@@ -14,7 +14,7 @@ body {
 .content {
   background: #cc9544;
   max-width: 164mm;
-  min-height: 196mm;
+  min-height: 190mm;
   margin: 25px auto;
   display: flex;
   justify-content: center;
@@ -56,4 +56,24 @@ hr {
   color: #361500;
   margin: 35px 0 35px;
   width: -webkit-fill-available;
+}
+
+footer {
+  color: #cc9544;
+  font-size: 10px;
+  opacity: 0.5;
+  position: absolute;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+
+a.professional-link {
+  color: #cc9544;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+a.professional-link:hover {
+  color: #361500;
+  font-size: 14px;
 }
