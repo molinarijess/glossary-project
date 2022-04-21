@@ -5,7 +5,11 @@ export default function DisplayPhotos({ photo }) {
     return (
       <div className="DisplayPhotos">
         {photo.photos.map((imgs, index) => {
-          return <img src={imgs.src.portrait} alt={imgs.alt} key={index} />;
+          if (index < 3) {
+            return <img src={imgs.src.portrait} alt={imgs.alt} key={index} />;
+          } else {
+            return null;
+          }
         })}
       </div>
     );
